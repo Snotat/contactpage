@@ -1,0 +1,163 @@
+.contact {
+  color: #666667;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 0px 30px;
+}
+.contact .head{
+  
+  padding: 75px 0px 30px 0px;
+    font-size: 35px;
+    color: rgb(223, 223, 223);
+    font-weight: 650;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  
+}
+
+.contact .info {
+  display: flex;
+  flex-direction: column;
+  
+ 
+
+  width:100%;
+  margin: 30px auto;
+
+  max-width: 600px;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  
+    border-radius: 10px;
+  
+    box-shadow: 5px 5px 20px rgb(30, 30, 30) , -1px -1px 20px rgb(40, 40, 40);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-top: 1px solid #ffffff75;
+    border-left: 1px solid #ffffff75;
+}
+.contact .info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding-bottom: 30px;
+    color: #dddddd;
+}
+.contact .info label {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+    
+}
+.contact .info input {
+  border: 1px solid #b8b8b8;
+  border-radius: 25px;
+  color: #5c5c5c;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  
+}
+
+.contact .info textarea {
+  width: 100%;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid #ababab;
+    border-radius: 25px;
+    color: #5d5d5d;
+  height: 100px;
+  font-family: monospace;
+}
+
+
+
+.contact .info button {
+ 
+  background: linear-gradient(to right, #00ff62, #0d9700);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius:25px;
+  width: 100%;
+  padding: 10px 0px;
+ 
+}
+.contact .other {
+  background-color: #ebe6e6;
+  margin: 35px;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .other p:first-child {
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #0d9700;
+  font-size: 30px;
+}
+.contact .other p:not(:first-child) {
+  font-size: 22px;
+}
+.contact .other button {
+  color: #fff;
+  padding: 3px;
+  background-color: #15ce05;
+}
+.contact .other button a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 1000;
+}
+.contact .other input {
+  padding: 5px;
+  width: 200px;
+  color: rgb(110, 110, 110);
+  font-size: 16px;
+}
+.box {
+  backdrop-filter: blur(15px);
+  position: relative;
+  padding: 30px;
+
+}
+
+.box:hover:before {
+  left: 250%;
+}
+
+.box::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  width: 30%;
+
+  filter: blur(20px);
+  background: rgba(189, 203, 255, 0.3);
+  animation-direction: left;
+  transform: skew(45deg);
+  left: -525px;
+  transition-duration: 700ms;
+
+}
+
+.box:hover {
+  transform: translateY(-5%);
+}
